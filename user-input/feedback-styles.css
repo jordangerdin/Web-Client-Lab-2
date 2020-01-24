@@ -1,0 +1,35 @@
+/* Apply style to all li elements */
+li {
+    font-style: italic;
+}
+
+/* Apply style to all a elements */
+label{
+    color: #0a5148;
+}
+
+p {
+    color: #0a5148;
+}
+
+a{
+    color: blue;
+}
+
+body {
+    font-family: 'fantasy';
+    background-color: #d5e1ce; 
+}
+
+.skill {
+    color:grey;
+}
+
+.jumbotron {
+    background-color: #ed3c3b;
+    font-family: 'fantasy';
+}
+
+.btn {
+    background-color: #ed3c3b
+}

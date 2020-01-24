@@ -1,0 +1,26 @@
+a{
+    display: block
+    
+}
+
+h1{
+    color: white;
+}
+
+#real-alert{
+    color: red;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#test-only{
+    color: green;
+    font-size: 15px;
+    padding: 10px;
+}
+
+body {
+    background-image: url("explosion.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
