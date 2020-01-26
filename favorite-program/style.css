@@ -16,6 +16,7 @@ img{
 .jumbotron{
     background-color: #bac1ae;
     color: #373930;
+    text-align: center;
 }
 
 #code-samples{
