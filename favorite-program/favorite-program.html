@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+
+<!-- Jumpotron with program title -->
+<!-- Short description of program -->
+<!-- Short code samples -->
+<!-- Link to github for program -->
+<!-- Images of screenshots from program -->
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -11,14 +17,55 @@
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
 
-    <body>
+    <body class="m-3">
 
         <div class="jumbotron">
-            <h1></h1>
-
+            <h1>League Profile</h1>
+            <h3>A personalized profile and match history for League of Legends</h3>
         </div>
 
+            <div class="row">
+                <div id="description" class="col-sm"> <!-- Description block-->
+                    <h5>This League Profile application was written in Java, using Riot's API.</h5>
+                    <p>The program features a profile search function, which then pulls information for the associated account.</p>
+                    <p>Their accounts current Ranked Data, player level, and top 3 champion mastery scores are pulled,</p>
+                    <p>as well as their most recent 20 games for their match history.</p>
+                    <p>Right clicking on a match, you can select more for more details, which brings up a second window</p>
+                    <p>Featuring more statistics such as game length, K/D/A, cs scores, and the player names and champions</p>
+                    <p>selected by all 10 players in the match.</p>
+
+                    <div>
+                        <p>Here's a small sample of the code to send an API request using Riot's API:</p>
+                        <pre>
+                            <code id="code-samples">
+    public static Summoner getPlayerData(String regionCode, String summoner) {
+        String version = "v4";
+
+        String urlSummoner = "https://" + regionCode + ".api.riotgames.com/lol/summoner/" + version +
+                "/summoners/by-name/" + summoner + "?api_key=" + LeagueProfileAPI.RIOT_API_KEY;
+        Summoner player = Unirest.get(urlSummoner)
+                .asObject(Summoner.class)
+                .ifFailure(Error.class, r -> {
+                    Error e = r.getBody();
+                })
+                .getBody();
+        return player;
+    }
+                    </code></pre>
+                    </div>
+
+                    <p>A link to the github page can be found <a href="https://github.com/jordangerdin/LeagueProfile">here.</a></p>
+                </div> <!-- End of description block-->
+
+                <div id="program-images" class="col-lg"> <!-- Images -->
+                    <img src="match-history.png" height=480px alt="An image of an accounts match history and associated data.">
+                    <img src="match-details.png" alt="An image of a specific match details, such as KDA, CS, and game length.">
+                </div>
+            </div>        
         
+            <div class="row">
+                
+            </div>
     </body>
 
 </html>

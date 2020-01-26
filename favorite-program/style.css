@@ -1,0 +1,23 @@
+body{
+    background-color: #ded5ba;
+}
+
+p{
+    color: #373930;
+}
+
+img{
+    display: block;
+    border-radius: 10px;
+    margin: 10px;
+    filter: drop-shadow(5px 5px 2px #373930);
+}
+
+.jumbotron{
+    background-color: #bac1ae;
+    color: #373930;
+}
+
+#code-samples{
+    font-style: italic;
+}
