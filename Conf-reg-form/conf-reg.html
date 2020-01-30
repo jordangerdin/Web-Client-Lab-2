@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="conf-reg-style.css" type="text/css">
+    </head>
+
+
+    <!-- *Text for name, max 70 char-->
+    <!-- *Password -->
+    <!-- *Email -->
+    <!-- *Shirt size, (sm med lg) -->
+    <!-- *DOB, as date -->
+    <!-- *Receive email from sponsors? Radio btns-->
+    <!-- Attending morning/afternoon/both sessions -->
+    <!-- Special requests, text area. (Size 7 rows 10 columns) -->
+    <!-- Submit button -->
+    <!-- Give all input elements a name attribute -->
+
+    
+    <body class="grad">
+        <div id="content">
+            <form>
+                <label for="name">Name: </label>
+                <input id="name" name="Name" type=text required><br>
+                
+                <label for="password">Password: </label>
+                <input id="password" name="Password" type=password required><br>
+                
+                <label for="email">Email: </label>
+                <input id="email" name="email" type=email required><br>
+
+                <label for="shirt-size">Shirt size: </label>
+                <select id="shirt-size" name="shirt-size" required>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="x-large">X-Large</option>
+                    <option value="xx-large">XX-Large</option>
+                </select><br>
+
+                <label for="date-of-birth">Date of Birth: </label>
+                <input id="date-of-birth" name="date-of-birth" type=date required><br>
+
+                <p class="form-text">Would you like to receive emails from conference sponsors?</p>
+
+                    <div class="form-check">
+                        <input name="emails" id="yes" class="form-check-input" type="radio" checked>
+                        <label for="yes" class="form-check-label">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input name="emails" id="no" class="form-check-input" type="radio">
+                        <label for="no" class="form-check-label">No</label>
+                    </div>
+
+                <p class="form-text">What sessions will you be attending?</p>
+                    
+                    <div class="form-check">
+                        <input name="morning" id="morning" class="form-check-input" type=checkbox>
+                        <label for="morning" class="form-check-label">Morning</label>
+                    </div>
+                    <div class="form-check">
+                        <input name="afternoon" id="afternoon" class="form-check-input" type=checkbox>
+                        <label for="afternoon" class="form-check-label">Afternoon</label>
+                    </div>
+
+                <div>
+                    <label for="special-requests">Special Requests: </label><br>
+                    <textarea id="special-requests" name="special-requests" rows="7" cols="70"></textarea>    
+                </div>
+                
+
+                <input type="submit" class="submit" value="Submit">
+            </form>
+        </div>
+
+    </body>
+</html>

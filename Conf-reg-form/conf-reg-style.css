@@ -1,0 +1,21 @@
+.grad {
+    background-image: linear-gradient(to left, #7c9891, #b4c7c0);
+}
+
+p{
+    color: #32272d;
+    font-family: 'Raleway', sans-serif;
+}
+
+label{
+    color: #32272d;
+    font-family: 'Raleway', sans-serif;
+}
+
+textarea{
+    font-family: 'Libre Baskerville', serif;
+}
+
+input{
+    font-family: 'Libre Baskerville', serif;
+}
